@@ -1,0 +1,37 @@
+  * { box-sizing: border-box; } 
+  h1{ text-align: center; } 
+  body { font-family: Times New Roman; background-color: white;}
+  .row{ width: 100%;  } 
+    .container{ border: 1px solid black; height: auto; width: 75%; 
+                margin-right: auto; margin-left: auto; position: relative;
+                margin-top: 5px; margin-bottom: 5px; background-color: grey;
+                  }
+    .titlebox{ position: absolute; right: 0px; top: 0px; background-color: yellow; 
+               border-left: 1px solid black; border-bottom: 1px solid black; 
+                }
+    .demotext{ padding-top: 20px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; }              
+
+/*********************************LARGE DEVICES**************************************/    
+     @media(min-width: 992px)
+     { .col-lg-4 {float: left; /*border: 1px solid green;*/ } 
+       .col-lg-4 { width: 33%; }  
+      }
+
+/*********************************MEDIUM DEVICES************************************/
+
+
+    @media (min-width: 786px) and (max-width: 991px) {
+   .col-md-6, .col-md-12 { float: left; /*border: 1px solid green;*/}  
+   .col-md-6{ width: 50%; }
+   .col-md-12{ width: 100%; }
+}
+
+/*******************************SMALL DEVICES***************************************/
+     
+     @media(max-width: 787px){
+      .col-sm-12 { float: left; /*border: 1px solid red;*/ }
+         
+        .col-sm-12{ width: 100%; }
+     }
+
+  
